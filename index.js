@@ -52,3 +52,7 @@ store.subscribe((state) => console.log("State after action:", state));
 
 //SCENERIO 1: Inital state
 store.getState(); // Current State: { count: 0 }
+
+// SCENARIO 2: Incrementing the Counter
+store.dispatch({ type: 'ADD' }); //  State after action: { count: 1 }
+store.dispatch({ type: 'ADD' }); //  State after action: { count: 2 }
