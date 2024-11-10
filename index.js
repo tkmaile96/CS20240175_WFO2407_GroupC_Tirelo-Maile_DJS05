@@ -45,4 +45,5 @@ function tallyReducer(state = { count: 0 }, action) {
 // Create a store with the reducer and initial state
 const store = new Store(tallyReducer, { count: 0 });
 
-//
+// Subscribe to the store
+store.subscribe((state) => console.log("State after action:", state));
