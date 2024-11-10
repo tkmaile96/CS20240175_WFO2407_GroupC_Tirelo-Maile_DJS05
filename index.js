@@ -41,3 +41,8 @@ function tallyReducer(state = { count: 0 }, action) {
             return state;
     }
 }
+
+// Create a store with the reducer and initial state
+const store = new Store(tallyReducer, { count: 0 });
+
+//
