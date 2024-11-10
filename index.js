@@ -47,3 +47,8 @@ const store = new Store(tallyReducer, { count: 0 });
 
 // Subscribe to the store
 store.subscribe((state) => console.log("State after action:", state));
+
+// User stories
+
+//SCENERIO 1: Inital state
+store.getState(); // Current State: { count: 0 }
