@@ -56,3 +56,9 @@ store.getState(); // Current State: { count: 0 }
 // SCENARIO 2: Incrementing the Counter
 store.dispatch({ type: 'ADD' }); //  State after action: { count: 1 }
 store.dispatch({ type: 'ADD' }); //  State after action: { count: 2 }
+
+// SCENARIO 3: Decrementing the Counter
+store.dispatch({ type: 'SUBTRACT' }); // State after action: { count: 1 }
+
+// SCENARIO 4: Resetting the Counter
+store.dispatch({ type: 'RESET' }); // State after action: { count: 0 }
